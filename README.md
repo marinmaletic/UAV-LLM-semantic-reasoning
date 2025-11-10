@@ -147,6 +147,18 @@ gz_bridge_yaml = os.path.join(
             )
 ```
 
+4. Install gazebo bridge packages:
+```bash
+sudo apt install -y ros-humble-ros-gzgarden ros-humble-ros-gz-bridge ros-humble-ros-gz-interfaces
+```
+5. Build the package:
+```bash
+cd ros2_ws
+colcon build --symlink-install --merge-install --cmake-args=-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+```
+
+
+
 ## Results
 Video results of the simulation and realworld testing of different scenarios can be found in the __documentation folder__. Below is one example of the algorithm working where the task is to find a **computer mouse**:
 
